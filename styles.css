@@ -1,0 +1,98 @@
+@layer global {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: rgb(239, 239, 239);
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.6rem;
+    }
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 500px;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: #ffa500;
+    padding: calc(20/16 * 1rem);
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.4rem;
+}
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: cursive;
+    padding: 0.5rem 0.3rem;
+    border-radius: 5px;
+}
+button {
+    font-family: cursive;
+    padding: 0.5rem 0.3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* created element style */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: cursive;
+    color: #fff;
+}
+
+li > div {
+    display: flex;
+    column-gap: 0.5rem;
+}
+.editBtn {
+    background-color: rgb(0, 0, 255);
+    color: #fff;
+}
+.deleteBtn {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 2555, 255);
+}
+
+/* aside pop modal */
+aside {
+    width: 85%;
+    background-color: rgb(246, 72, 72);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+aside span {
+    font-size: 3rem;
+    cursor: pointer;
+}
+aside span:hover {
+    opacity: 0.5;
+}
