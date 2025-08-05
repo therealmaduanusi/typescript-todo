@@ -10,7 +10,7 @@ Some cases you have to explicity do it yourself
 - Edit
 - Error handling
 
-[!IMPORTANT]
+>[!IMPORTANT]
 > Install the ts complier. i stands for install you can spell it out or not either way it works perfectly.
 The -g means global you can also write --global.
 
